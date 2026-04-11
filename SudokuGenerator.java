@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class SudokuGenerator {
 
     public static void main(String[] args) {
-        // Part 1: Use a 2D array to store the final board
         int[][] board = new int[9][9];
 
         // Part 1: Use an ArrayList to create our base set of numbers
