@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
-public class Sudoku {
-    public static void main(String[] args) {
+public class Sudoku{
+    public static void main(String[] args){
         int[][] board = new int[9][9];
         ArrayList<Integer> seedNums = generateShuffledList();
 
@@ -11,11 +11,11 @@ public class Sudoku {
     
     public static ArrayList<Integer> generateShuffledList(){
         ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 1; i <= 9; i++) {
+        for (int i = 1; i <= 9; i++){
             list.add(i);
         }
 
-        for (int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < list.size(); i++){
             int rand = (int) (Math.random() * 9);
             int temp = list.get(i);
             list.set(i, list.get(rand));
@@ -24,9 +24,9 @@ public class Sudoku {
         return list;
     }
     
-    public static boolean fillBoard(int[][] board, ArrayList<Integer> seedNums) {
-        for (int row = 0; row < 9; row++) {
-            for (int col = 0; col < 9; col++) {
+    public static boolean fillBoard(int[][] board, ArrayList<Integer> seedNums){
+        for (int row = 0; row < 9; row++){
+            for (int col = 0; col < 9; col++){
                 if (board[row][col] == 0){
                     
                     for (int num : seedNums) {
