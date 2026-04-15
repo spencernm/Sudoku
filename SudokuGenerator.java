@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Sudoku{
+public class SudokuGenerator{
     public static void main(String[] args){
         int[][] board = new int[9][9];
         ArrayList<Integer> seedNums = generateShuffledList();
